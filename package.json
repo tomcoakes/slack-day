@@ -12,6 +12,7 @@
     "grunt-jasmine-nodejs": "^1.3.0"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "start": "node index.js"
   }
 }
