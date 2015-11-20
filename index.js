@@ -55,6 +55,7 @@ server.on('after', restify.auditLogger({ log: log }));
 routes(server);
 
 console.log('Server started.');
-server.listen(8888, function () {
+server.listen(process.env.PORT, function () {
+  console.log("PORT IS: ", process.env.PORT);
   log.info('listening at %s', server.url);
 });
